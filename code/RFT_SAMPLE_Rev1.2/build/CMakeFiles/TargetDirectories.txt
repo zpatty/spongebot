@@ -1,0 +1,3 @@
+/home/zach/Documents/git-repos/coupled_elasticity/build/CMakeFiles/rft.dir
+/home/zach/Documents/git-repos/coupled_elasticity/build/CMakeFiles/edit_cache.dir
+/home/zach/Documents/git-repos/coupled_elasticity/build/CMakeFiles/rebuild_cache.dir

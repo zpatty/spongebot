@@ -1,0 +1,17 @@
+[
+{
+  "directory": "/home/zach/Documents/git-repos/coupled_elasticity/build",
+  "command": "/usr/bin/c++ -Drft_EXPORTS -isystem /home/zach/anaconda3/include/python3.7m -g -fPIC -fvisibility=hidden -o CMakeFiles/rft.dir/rft.cpp.o -c /home/zach/Documents/git-repos/coupled_elasticity/RFT_SAMPLE_Rev1.2/rft.cpp",
+  "file": "/home/zach/Documents/git-repos/coupled_elasticity/RFT_SAMPLE_Rev1.2/rft.cpp"
+},
+{
+  "directory": "/home/zach/Documents/git-repos/coupled_elasticity/build",
+  "command": "/usr/bin/c++ -Drft_EXPORTS -isystem /home/zach/anaconda3/include/python3.7m -g -fPIC -fvisibility=hidden -o CMakeFiles/rft.dir/RFT_IF_PACKET_Rev1.2.cpp.o -c /home/zach/Documents/git-repos/coupled_elasticity/RFT_SAMPLE_Rev1.2/RFT_IF_PACKET_Rev1.2.cpp",
+  "file": "/home/zach/Documents/git-repos/coupled_elasticity/RFT_SAMPLE_Rev1.2/RFT_IF_PACKET_Rev1.2.cpp"
+},
+{
+  "directory": "/home/zach/Documents/git-repos/coupled_elasticity/build",
+  "command": "/usr/bin/c++ -Drft_EXPORTS -isystem /home/zach/anaconda3/include/python3.7m -g -fPIC -fvisibility=hidden -o CMakeFiles/rft.dir/RFT_UART_SAMPLE.cpp.o -c /home/zach/Documents/git-repos/coupled_elasticity/RFT_SAMPLE_Rev1.2/RFT_UART_SAMPLE.cpp",
+  "file": "/home/zach/Documents/git-repos/coupled_elasticity/RFT_SAMPLE_Rev1.2/RFT_UART_SAMPLE.cpp"
+}
+]

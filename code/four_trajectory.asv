@@ -1,0 +1,37 @@
+%% 4D Arm Trajectory
+d = 0.04337;
+theta = [0 0.0 0.0 -0.0;
+        0 0.0 0.0 0.0;
+        0 0 0 0;
+        0 0.0 0.0 0.0];
+phi = [0 0 0 0;
+        0 0 0 0;
+        0 0 0 0;
+        0 0 0 0];
+dL = [-0.0 -0.1 -0.1 -0.1;
+    -0.0 -0.1 -0.1 -0.1;
+    -0.0 -0.0 -0.0 -0.0
+    -0.0 -0.0 -0.0 -0.0;];
+
+dx = theta.*d.*cos(phi);
+dy = theta.*d.*sin(phi);
+
+motor = [0 0 -pi/2 -pi/2;
+        0 0 0 0;
+        70*pi/180 70*pi/180 70*pi/180 70*pi/180;
+        70*pi/180 70*pi/180 70*pi/180 70*pi/180];
+
+wayPoints = [motor(1,:);dx(1,:);dy(1,:);dL(1,:);motor(2,:);dx(2,:);dy(2,:);dL(2,:);motor(3,:);
+    dx(3,:);dy(3,:);dL(3,:)];
+timePoints = [0 4 6 7];
+tvec = 0:0.05:9;
+tSamples = length(tvec);
+[qd,dqd,ddqd,pp] = cubicpolytraj(wayPoints,timePoints,tSamples);
+
+save("~/SRRA/qd.mat", "qd")
+save("~/SRRA/dqd.mat", "dqd")
+save("~/SRRA/ddqd.mat", "ddqd")
+save("~/SRRA/tvec.mat", "tvec")
+
+
+

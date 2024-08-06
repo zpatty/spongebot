@@ -1,0 +1,9 @@
+DLL {
+	global:
+		puppet_controller_4_cg;
+		puppet_controller_4_cg_initialize;
+		puppet_controller_4_cg_terminate;
+		rt_powd_snf;
+	local:
+		*;
+};
